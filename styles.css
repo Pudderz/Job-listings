@@ -2,7 +2,7 @@
 
 body{
     background-color: hsl(180, 52%, 96%);
-    
+    margin: 0px;
 
 }
 *{
@@ -12,12 +12,13 @@ body{
 
 
 .item{
-    margin: auto 5%;
+    margin: auto 5%; 
     display: flex;
     background-color: white;
     box-shadow: 1px 1px 5px 0px hsl(180, 8%, 52%);
     border-radius: 5px;
-
+    padding: 0 2% 0 0;
+    position: relative;
 }
 #search{
     margin: 1% 1%;
@@ -53,6 +54,7 @@ body{
 
 .grid{
     display: grid;
+    padding: 0px 20px;
     
 }
 
@@ -77,9 +79,9 @@ body{
 }
 .tags p{
     padding: 5px;
-    font-size: small;
+    font-size: medium;
     background-color: hsl(180, 31%, 95%);
-    font-weight: 700;
+    font-weight: 1000;
     color: hsl(180, 29%, 50%);
     border-radius: 5px;
 }
@@ -92,7 +94,8 @@ body{
 .features{
     display: flex;
     justify-content: space-between;
-    width: 200px;
+    width: fit-content;
+    gap:2%;
     
 }
 
@@ -100,4 +103,56 @@ body{
     color: hsl(180, 29%, 50%);
     font-weight: 700;
     margin-right: 10px ;
+    padding: 4px;
+    height: fit-content;
+    font-weight: bolder;
+}
+
+.featured{
+    color: white;
+    background: hsl(180, 14%, 20%);
+    border-radius: 5px;
+    border-radius: 10px;
+    padding: 4px;
+    height: fit-content;
+    font-weight: bolder;
+}
+
+.new{
+    color: white;
+    background: hsl(180, 29%, 50%);
+    border-radius: 5px;
+    border-radius: 10px;
+    padding: 4px;
+    height: fit-content;
+    font-weight: bolder;
+}
+.lineBreak{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .item{
+        display: block;
+        padding: 25px 20px 20px 20px;
+        margin: 50px 3%;
+    }
+    .tags{
+        justify-content: flex-start;
+    }
+    .lineBreak{
+        display: block;
+    }
+    .logo{
+        position: absolute;
+        top: -50px;
+        text-align: start;
+        min-height: fit-content;
+    }
+    .logoImage{
+        height: 100px;
+    }
+    .grid{
+        padding: 0px;
+    }
 }
