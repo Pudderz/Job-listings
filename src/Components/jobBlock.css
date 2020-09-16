@@ -12,7 +12,7 @@ body{
 
 
 .item{
-    margin: auto 5%; 
+    margin: 1% 5%; 
     display: flex;
     background-color: white;
     box-shadow: 1px 1px 5px 0px hsl(180, 8%, 52%);
@@ -20,23 +20,7 @@ body{
     padding: 0 2% 0 0;
     position: relative;
 }
-#search{
-    margin: 1% 1%;
-    height: 30px;
-    font-size: medium;
-    width: 98%;
-    border-style: none;
-    box-shadow: 1px 1px 2px 0px hsl(180, 8%, 52%);
-}
 
-
-#headerBackground{
-    background-image: url('/images/bg-header-desktop.svg');
-    background-size: cover;
-    background-color: hsl(180, 29%, 50%);
-    background-position: center;
-    height: 20vh;
-}
 
 .logo{
     
@@ -54,9 +38,9 @@ body{
 
 .grid{
     display: grid;
-    padding: 0px 20px;
-    
+    padding: 0px 20px 0 0;
 }
+    
 
 .extraInfo{
     display: flex;
@@ -84,6 +68,7 @@ body{
     font-weight: 1000;
     color: hsl(180, 29%, 50%);
     border-radius: 5px;
+    margin: 1% 0px;
 }
 .jobName{
     color: black;

@@ -1,4 +1,4 @@
-[
+let data = `[
   {
     "id": 1,
     "company": "Photosnap",
@@ -149,4 +149,6 @@
     "languages": ["JavaScript"],
     "tools": ["React", "Sass"]
   }
-]
+]`;
+
+export {data}
