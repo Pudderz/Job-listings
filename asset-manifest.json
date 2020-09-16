@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Job-listings/static/css/main.e35c67cc.chunk.css",
+    "main.js": "/Job-listings/static/js/main.5eafaaf3.chunk.js",
+    "main.js.map": "/Job-listings/static/js/main.5eafaaf3.chunk.js.map",
+    "runtime-main.js": "/Job-listings/static/js/runtime-main.96d93530.js",
+    "runtime-main.js.map": "/Job-listings/static/js/runtime-main.96d93530.js.map",
+    "static/js/2.b866d83f.chunk.js": "/Job-listings/static/js/2.b866d83f.chunk.js",
+    "static/js/2.b866d83f.chunk.js.map": "/Job-listings/static/js/2.b866d83f.chunk.js.map",
+    "index.html": "/Job-listings/index.html",
+    "precache-manifest.bf0cb023d2a7036356e701544442ecb9.js": "/Job-listings/precache-manifest.bf0cb023d2a7036356e701544442ecb9.js",
+    "service-worker.js": "/Job-listings/service-worker.js",
+    "static/css/main.e35c67cc.chunk.css.map": "/Job-listings/static/css/main.e35c67cc.chunk.css.map",
+    "static/js/2.b866d83f.chunk.js.LICENSE.txt": "/Job-listings/static/js/2.b866d83f.chunk.js.LICENSE.txt",
+    "static/media/account.svg": "/Job-listings/static/media/account.9f72c13b.svg",
+    "static/media/eyecam-co.svg": "/Job-listings/static/media/eyecam-co.39eaebdf.svg",
+    "static/media/faceit.svg": "/Job-listings/static/media/faceit.76faa79f.svg",
+    "static/media/icon-remove.svg": "/Job-listings/static/media/icon-remove.ae67c678.svg",
+    "static/media/insure.svg": "/Job-listings/static/media/insure.52b85a50.svg",
+    "static/media/loop-studios.svg": "/Job-listings/static/media/loop-studios.6c50fd74.svg",
+    "static/media/manage.svg": "/Job-listings/static/media/manage.fbe431a9.svg",
+    "static/media/myhome.svg": "/Job-listings/static/media/myhome.e0ad9358.svg",
+    "static/media/photosnap.svg": "/Job-listings/static/media/photosnap.3f34b49c.svg",
+    "static/media/shortly.svg": "/Job-listings/static/media/shortly.45f63772.svg",
+    "static/media/the-air-filter-company.svg": "/Job-listings/static/media/the-air-filter-company.23b515f9.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96d93530.js",
+    "static/js/2.b866d83f.chunk.js",
+    "static/css/main.e35c67cc.chunk.css",
+    "static/js/main.5eafaaf3.chunk.js"
+  ]
+}
