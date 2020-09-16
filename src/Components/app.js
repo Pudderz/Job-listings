@@ -2,7 +2,7 @@ import React from 'react';
 import {data} from '../data';
 import Search from './searchBar';
 import JobBlock from './jobBlock';
-
+import './styles.css';
 const jobs = JSON.parse(data);
 class App extends React.Component{
     constructor(props){
@@ -29,7 +29,9 @@ class App extends React.Component{
 
     render(){
         return(
-            <div>
+            <React.Fragment>
+                <div id="headerBackground">
+                </div>
                <Search value={this.state.searchValue} onSearchChange={this.searchChange}/>
                 {this.state.jobResults.map((job,index)=>{
                     return(
@@ -37,7 +39,7 @@ class App extends React.Component{
                     )
                 })
                 } 
-            </div>
+            </React.Fragment>
         )
     }
 }

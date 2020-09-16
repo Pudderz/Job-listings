@@ -1,12 +1,15 @@
 #search{
-    margin: 1% 5%;
-    height: 50px;
+    margin:10vh 5% 0;
     font-size: medium;
-    width: 89%;
+    width: 90%;
     border-style: none;
     box-shadow: 1px 1px 2px 0px hsl(180, 8%, 52%);
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 20px;
+    position: sticky;
+    top:1%;
+    z-index: 1;
+
 }
 input[type=search]:focus{
     outline: none;
