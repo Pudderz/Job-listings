@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import JobBlock from './Components/jobBlock'
 import * as serviceWorker from './serviceWorker';
 import {data} from './data';
-
+import Search from './Components/searchBar'
 let jobs = JSON.parse(data);
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <Search/>
     {jobs.map((job,index)=>{
       return(
         <JobBlock key={index} jobDetails={job}/>
