@@ -6,7 +6,6 @@ function Tag(props){
     listItems.push(props.level);
     props.languages.forEach(element => listItems.push(element));
     props.tools.forEach(element => listItems.push(element));
-    console.log(`listItems ${listItems}`)
     return(<React.Fragment>
                 {listItems.map((info, index)=>{
                     return(<p key = {index.toString()}>{info}</p>) 

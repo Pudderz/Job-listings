@@ -1,21 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import JobBlock from './Components/jobBlock'
 import * as serviceWorker from './serviceWorker';
-import {data} from './data';
-import Search from './Components/searchBar'
-let jobs = JSON.parse(data);
-
+import App from './Components/app';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Search/>
-    {jobs.map((job,index)=>{
-      return(
-        <JobBlock key={index} jobDetails={job}/>
-      )
-    })
-    }
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
