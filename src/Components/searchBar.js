@@ -1,37 +1,30 @@
 import React, { Component } from 'react';
 import './searchStyles.css'
+import SearchResult from './searchResult.js';
 
-const options = [
-    {value:'frontend', label: 'Frontend', },
-    {value:'backend', label: 'Backend', },
-    {value:'fullstack', label: 'Fullstack', },
-    {value:'junior', label: 'Junior', },
-    {value:'midweight', label: 'Midweight', },
-    {value:' senior', label: ' Senior', },
-    {value:'python', label: 'Python', },
-    {value:'ruby', label: 'Ruby', },
-    {value:'javascript', label: 'JavaScript', },
-    {value:'html', label: 'HTML', },
-    {value:'css', label: 'CSS', },
-    {value:'react,', label: 'React,', },
-    {value:'sass', label: 'Sass', },
-    {value:' vue', label: ' Vue', },
-    {value:'django', lable:'Django'},
-    {value:'ror', lable:'RoR'},
-]
 class search extends Component {
-    changeValue(event){
-        console.log(event.target.value)
-        this.props.onSearchChange(event.target.value)
+    changeValue=(event)=>{
+        this.props.onSearchChange(event)
+    }
+    onRemoveClicked=(event)=>{
+        this.props.removeValue(event)
     }
 
     render() {
         return (
-            <div>
+            <div id="search">
             {/* <Select options={options} onChange={(e)=>this.changeValue(e)} isMulti /> */}
             {/* <input id="search" type="search" onChange={(e)=>this.changeValue(e)} placeholder="Search Jobs"/>  */}
-            
-            <input list="searches" value={this.props.value} name="options" id="search" onChange={(e)=>this.changeValue(e)} placeholder="Search Category" multiple/>
+            {this.props.value.split(' ').map((result, index)=>{
+                return(
+                   <SearchResult key={index} result = {result} onRemoveValue={(e)=>this.onRemoveClicked(e)}/> 
+                )
+            })}
+            <input type="button" value="Clear" onClick={(e)=>this.changeValue('')}/>
+            {/*
+                Old search, however in the design we dont need to search we just need to filter the categorys and put the results in a search bar when clicked on
+
+                <input list="searches" value={this.props.value} name="options" id="search" onChange={(e)=>this.changeValue(e)} placeholder="Search Category" multiple/>
                 <datalist id="searches">
                     <option value="fullstack"/>
                     <option value="midweight"/>
@@ -40,7 +33,7 @@ class search extends Component {
                 <option value="ruby"/>
                 <option value="css"/>
                 <option value="javascript"/>
-                </datalist>
+                </datalist> */}
             </div>
         )
     }

@@ -1,7 +1,6 @@
 #search{
-    margin:10vh 5% 0;
+    margin:10vh 5% 0 5%;
     font-size: medium;
-    width: 90%;
     border-style: none;
     box-shadow: 1px 1px 2px 0px hsl(180, 8%, 52%);
     border-radius: 10px;
@@ -9,6 +8,7 @@
     position: sticky;
     top:1%;
     z-index: 1;
+    background-color: white;
 
 }
 input[type=search]:focus{
