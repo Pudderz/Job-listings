@@ -2,8 +2,11 @@ import React from 'react';
 import {data} from '../data';
 import Search from './searchBar';
 import JobBlock from './jobBlock';
-import './styles.css';
+import './styles.scss';
 const jobs = JSON.parse(data);
+let result = true
+let listOfTags='';
+
 class App extends React.Component{
     constructor(props){
         super(props);
@@ -14,19 +17,24 @@ class App extends React.Component{
     }
     searchChange=(e)=>{
         this.setState({
-            searchValue: e.target.value,
+            searchValue: e,
             jobResults: jobs.filter((item)=>{
-                if(e.target.value ==='')return true
-                else if(
-                    item.company.toLowerCase().includes(e.target.value.toLowerCase()) 
-                    ||item.position.toLowerCase().includes(e.target.value.toLowerCase())
-                ) return true
-                else return false
-                }),
+                if(e ==='')return true
+                else {
+                    result =true
+                    listOfTags = item.languages.join(' ').toLowerCase() + item.tools.join('').toLowerCase()
+                    e.toLowerCase().split(' ').forEach(element => {
+                        if(!listOfTags.includes(element)) result=false
+                    });   
+                    return result
+                }
+            })
         })
         console.log('searchChange');
     }
-
+    tagClick=(e)=>{
+        this.searchChange(`${this.state.searchValue} ${e}`);
+    }
     render(){
         return(
             <React.Fragment>
@@ -35,7 +43,7 @@ class App extends React.Component{
                <Search value={this.state.searchValue} onSearchChange={this.searchChange}/>
                 {this.state.jobResults.map((job,index)=>{
                     return(
-                    <JobBlock key={index} jobDetails={job}/>
+                    <JobBlock key={index} jobDetails={job} onTagClick={this.tagClick}/>
                     )
                 })
                 } 

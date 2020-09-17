@@ -60,21 +60,34 @@ body{
     width: 100%;
     gap: 2%;
     margin-right: inherit;
+    p{
+        padding: 5px;
+        font-size: medium;
+        background-color: hsl(180, 31%, 95%);
+        font-weight: 1000;
+        color: hsl(180, 29%, 50%);
+        border-radius: 5px;
+        margin: 1% 0px;
+        cursor: pointer;
+        &:hover{
+            background-color: hsl(180, 29%, 50%);
+            color: hsl(180, 31%, 95%);
+        }
+    }
+    
+
+
 }
-.tags p{
-    padding: 5px;
-    font-size: medium;
-    background-color: hsl(180, 31%, 95%);
-    font-weight: 1000;
-    color: hsl(180, 29%, 50%);
-    border-radius: 5px;
-    margin: 1% 0px;
-}
+
 .jobName{
-    color: black;
+    color:black;
     font-weight: 700;
     font-family: 'Spartan', sans-serif;
     margin: 0;
+    cursor: pointer;
+    &:hover{
+        color:hsl(180, 29%, 50%);
+    }
 }
 .features{
     display: flex;
@@ -82,26 +95,18 @@ body{
     width: fit-content;
     gap:2%;
     
+    .company{
+        color: hsl(180, 29%, 50%);
+        font-weight: 700;
+        margin-right: 10px ;
+        padding: 4px;
+        height: fit-content;
+        font-weight: bolder;
+    }
+
 }
 
-.features .company{
-    color: hsl(180, 29%, 50%);
-    font-weight: 700;
-    margin-right: 10px ;
-    padding: 4px;
-    height: fit-content;
-    font-weight: bolder;
-}
 
-.featured{
-    color: white;
-    background: hsl(180, 14%, 20%);
-    border-radius: 5px;
-    border-radius: 10px;
-    padding: 4px;
-    height: fit-content;
-    font-weight: bolder;
-}
 
 .new{
     color: white;

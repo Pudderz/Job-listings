@@ -1,5 +1,5 @@
 import React from 'react';
-import './jobBlock.css';
+import './jobBlock.scss';
 import New from './new';
 import Featured from './featured';
 import Tag from './tag';
@@ -7,6 +7,7 @@ import Logo from './logo'
 
 
 class JobBlock extends React.Component{
+    
     render(){
         return(
             <div className="item">
@@ -17,7 +18,7 @@ class JobBlock extends React.Component{
                 <div className="grid">
                     <div className="features">
                         <p className="company">{this.props.jobDetails.company}</p>
-                        <New className="new" new= {this.props.jobDetails.name}/>
+                        <New className="new" new= {this.props.jobDetails.new}/>
                         <Featured className="featured" featured={this.props.jobDetails.featured}/>
                     </div>
                     <h2 className="jobName">
@@ -31,7 +32,7 @@ class JobBlock extends React.Component{
                 </div>
                 <hr className="lineBreak"/>
                 <div className="tags">
-                    <Tag role={this.props.jobDetails.role} level={this.props.jobDetails.level} languages={this.props.jobDetails.languages} tools={this.props.jobDetails.tools}/>
+                    <Tag onTagClick={this.props.onTagClick} role={this.props.jobDetails.role} level={this.props.jobDetails.level} languages={this.props.jobDetails.languages} tools={this.props.jobDetails.tools}/>
                 </div>    
             </div>
         );
