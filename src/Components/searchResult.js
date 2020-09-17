@@ -7,7 +7,7 @@ class SearchResult extends React.Component{
     }
     render(){
         if(this.props.result === ''){
-            return(<React.Fragment/>)
+            return(<></>)
         }
         return(
             <div className="searchResult">
@@ -16,6 +16,7 @@ class SearchResult extends React.Component{
             </div>
         )
     }
+
 }
 
 export default SearchResult;

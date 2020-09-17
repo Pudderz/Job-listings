@@ -10,7 +10,7 @@ class JobBlock extends React.Component{
     
     render(){
         return(
-            <div className="item">
+            <li className={`item featured${this.props.jobDetails.featured}`}>
                 <div className="logo">
                     <Logo className="logoImage" logo={this.props.jobDetails.logo} />
                 </div>
@@ -34,7 +34,7 @@ class JobBlock extends React.Component{
                 <div className="tags">
                     <Tag onTagClick={this.props.onTagClick} role={this.props.jobDetails.role} level={this.props.jobDetails.level} languages={this.props.jobDetails.languages} tools={this.props.jobDetails.tools}/>
                 </div>    
-            </div>
+            </li>
         );
     }
 }

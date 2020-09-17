@@ -19,32 +19,22 @@ class App extends React.Component{
 
     changeJob=(e)=>{
         return jobs.filter(item=>{
-                        if(e ==='')return true
-                        else {
-                            result =true
-                            listOfTags = item.languages.join(' ').toLowerCase() + item.tools.join('').toLowerCase()
-                            e.toLowerCase().split(' ').forEach(element => {
-                                if(!listOfTags.includes(element)) result=false
-                            });   
-                            return result
-                        }
+            if(e ==='')return true
+            else {
+                result =true
+                listOfTags = `${item.languages.join(' ')} ${item.tools.join(' ')} ${item.level} ${item.role} `;
+                listOfTags = listOfTags.toLowerCase();
+                e.toLowerCase().split(' ').forEach(element => {
+                    if(!listOfTags.includes(element)) result=false
+                });   
+                return result
+            }
     })}
 
     searchChange=e=>{
         this.setState({
             searchValue: e,
-            jobResults: jobs.filter(item=>{
-                if(e ==='')return true
-                else {
-                    result =true
-                    listOfTags = item.languages.join(' ').toLowerCase() + item.tools.join('').toLowerCase()
-                    console.log(listOfTags)
-                    e.toLowerCase().split(' ').forEach(element => {
-                        if(!listOfTags.includes(element)) result=false
-                    });   
-                    return result
-                }
-            }),
+            jobResults: this.changeJob(e),
         })
     }
 
@@ -53,18 +43,7 @@ class App extends React.Component{
             searchValue: this.state.searchValue.split(' ').filter((item, index)=> item!== e).join(' '),
 
         },()=>{this.setState({
-            jobResults: jobs.filter((item)=>{
-                if(this.state.searchValue ==='')return true
-                else {
-                    result =true
-                    listOfTags = item.languages.join(' ').toLowerCase() + item.tools.join('').toLowerCase()
-                    console.log(this.state.searchValue);
-                    this.state.searchValue.toLowerCase().split(' ').forEach(element => {
-                        if(!listOfTags.includes(element)) result=false
-                    });   
-                    return result
-                }
-            }),
+            jobResults: this.changeJob(this.state.searchValue),
         })})
         
         console.log(this.state.searchValue)
@@ -80,12 +59,14 @@ class App extends React.Component{
                 <div id="headerBackground">
                 </div>
                <Search value={this.state.searchValue} onSearchChange={this.searchChange} removeValue={this.removeSearch}/>
+               <ul>
                 {this.state.jobResults.map((job,index)=>{
                     return(
                     <JobBlock key={index} jobDetails={job} onTagClick={this.tagClick}/>
                     )
                 })
-                } 
+                }
+                </ul>
             </React.Fragment>
         )
     }
