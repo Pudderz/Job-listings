@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ae7633e271067a0558c0d524e02c84c",
+    "revision": "89a5dc8ac5e839283f9a4d33700711b0",
     "url": "/Job-listings/index.html"
   },
   {
-    "revision": "9e9890540a328b3a385b",
-    "url": "/Job-listings/static/css/main.f32db282.chunk.css"
+    "revision": "eda119178dd770856137",
+    "url": "/Job-listings/static/css/main.20e3007f.chunk.css"
   },
   {
-    "revision": "a8b2e16e4a38dc87dea1",
-    "url": "/Job-listings/static/js/2.6d6cdd0f.chunk.js"
+    "revision": "a70bc940d4ae0c2659a8",
+    "url": "/Job-listings/static/js/2.698030e0.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Job-listings/static/js/2.6d6cdd0f.chunk.js.LICENSE.txt"
+    "url": "/Job-listings/static/js/2.698030e0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9e9890540a328b3a385b",
-    "url": "/Job-listings/static/js/main.c059384d.chunk.js"
+    "revision": "eda119178dd770856137",
+    "url": "/Job-listings/static/js/main.3f87f88c.chunk.js"
   },
   {
     "revision": "71a0aade1b43f5f0d04e",
@@ -26,6 +26,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9f72c13bc10a76e4bcb8f7ab62582b9f",
     "url": "/Job-listings/static/media/account.9f72c13b.svg"
+  },
+  {
+    "revision": "6e2f7196c0644447b6887a48a265bdb1",
+    "url": "/Job-listings/static/media/bg-header-desktop.6e2f7196.svg"
+  },
+  {
+    "revision": "6b5ff5a0e7f81b4c1247726c10c7aef5",
+    "url": "/Job-listings/static/media/bg-header-mobile.6b5ff5a0.svg"
   },
   {
     "revision": "39eaebdf1b82df9648392a9fb0915e9c",

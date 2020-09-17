@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/Job-listings/static/css/main.f32db282.chunk.css",
-    "main.js": "/Job-listings/static/js/main.c059384d.chunk.js",
-    "main.js.map": "/Job-listings/static/js/main.c059384d.chunk.js.map",
+    "main.css": "/Job-listings/static/css/main.20e3007f.chunk.css",
+    "main.js": "/Job-listings/static/js/main.3f87f88c.chunk.js",
+    "main.js.map": "/Job-listings/static/js/main.3f87f88c.chunk.js.map",
     "runtime-main.js": "/Job-listings/static/js/runtime-main.96d93530.js",
     "runtime-main.js.map": "/Job-listings/static/js/runtime-main.96d93530.js.map",
-    "static/js/2.6d6cdd0f.chunk.js": "/Job-listings/static/js/2.6d6cdd0f.chunk.js",
-    "static/js/2.6d6cdd0f.chunk.js.map": "/Job-listings/static/js/2.6d6cdd0f.chunk.js.map",
+    "static/js/2.698030e0.chunk.js": "/Job-listings/static/js/2.698030e0.chunk.js",
+    "static/js/2.698030e0.chunk.js.map": "/Job-listings/static/js/2.698030e0.chunk.js.map",
     "index.html": "/Job-listings/index.html",
-    "precache-manifest.2726552deab1f6355cab22285f46f819.js": "/Job-listings/precache-manifest.2726552deab1f6355cab22285f46f819.js",
+    "precache-manifest.d5022f6af65c0cdc99de686f51a43e6f.js": "/Job-listings/precache-manifest.d5022f6af65c0cdc99de686f51a43e6f.js",
     "service-worker.js": "/Job-listings/service-worker.js",
-    "static/css/main.f32db282.chunk.css.map": "/Job-listings/static/css/main.f32db282.chunk.css.map",
-    "static/js/2.6d6cdd0f.chunk.js.LICENSE.txt": "/Job-listings/static/js/2.6d6cdd0f.chunk.js.LICENSE.txt",
+    "static/css/main.20e3007f.chunk.css.map": "/Job-listings/static/css/main.20e3007f.chunk.css.map",
+    "static/js/2.698030e0.chunk.js.LICENSE.txt": "/Job-listings/static/js/2.698030e0.chunk.js.LICENSE.txt",
     "static/media/account.svg": "/Job-listings/static/media/account.9f72c13b.svg",
+    "static/media/bg-header-desktop.svg": "/Job-listings/static/media/bg-header-desktop.6e2f7196.svg",
+    "static/media/bg-header-mobile.svg": "/Job-listings/static/media/bg-header-mobile.6b5ff5a0.svg",
     "static/media/eyecam-co.svg": "/Job-listings/static/media/eyecam-co.39eaebdf.svg",
     "static/media/faceit.svg": "/Job-listings/static/media/faceit.76faa79f.svg",
     "static/media/icon-remove.svg": "/Job-listings/static/media/icon-remove.ae67c678.svg",
@@ -26,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.96d93530.js",
-    "static/js/2.6d6cdd0f.chunk.js",
-    "static/css/main.f32db282.chunk.css",
-    "static/js/main.c059384d.chunk.js"
+    "static/js/2.698030e0.chunk.js",
+    "static/css/main.20e3007f.chunk.css",
+    "static/js/main.3f87f88c.chunk.js"
   ]
 }
